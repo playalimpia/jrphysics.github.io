@@ -13,7 +13,7 @@ tmonth=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agost
 
 horario = new Array(
   ["Domingo!", "Domingo!", "Domingo!", "Domingo!", "Domingo!", "Domingo!", "Domingo!", "Domingo!", "Domingo!"],
-  ["Libre!", "Bio Geo 3ºB", "Biología 4ºB", "C.Científica 1ºB Bach", "TP", "C.Científica 1ºA Bach", "PP", "Recreo", "Terminado el día"],
+  ["Libre!", "Bio Geo 3ºB", "Biología 4ºB", "C.Científica 1ºB Bach", "TP", "C.Científica 1ºA Bach", "PP", "Recreo", "Terminado el día"],https://github.com/playalimpia/playalimpia.github.io
   ["Libre!", "AC", "Biología 2ºA Bach", "Reunión BG", "Biología 4ºB", "Bio Geo 3ºB", "Bio Geo 3ºA", "Recreo", "Terminado el día"],
   ["Biología 2ºA Bach", "Guardia Aula", "Reunión REECC", "AAEE", "C.Científica 1ºB Bach", "AC", "PP", "Recreo", "Terminado el día"],
   ["Libre!", "JAE", "JAE", "Bio Geo 3ºA", "Biología 2ºA Bach", "Biología 4ºB", "Guardia Aula", "Recreo", "Terminado el día"],
@@ -45,19 +45,19 @@ function GetClase(){
   } else if (hora2>=15 && min2>=0) {
     clasenow = "Terminado el día!"
     hora3 = 8
-  } else if ((hora2=8 && min2>=0) && (hora2=8 && min2<55)) {
+  } else if ((hora2=8) && (min2>=0 && min2<55)) {
     hora3 = 0;
-  } else if ((hora2=8 && min2>=55) && (hora2=9 && min2<50)) {
+  } else if ((hora2=8 && min2>=55) || (hora2=9 && min2<50)) {
     hora3 = 1;
-  } else if ((hora2=9 && min2>=50) && (hora2=10 && min2<45)) {
+  } else if ((hora2=9 && min2>=50) || (hora2=10 && min2<45)) {
     hora3 = 2;
-  } else if ((hora2=11 && min2>=5) && (hora2=12 && min2<00)) {
+  } else if (hora2=11 && min2>=5) {
     hora3 = 3;
-  } else if ((hora2=12 && min2>=0) && (hora2=12 && min2<55)) {
+  } else if ((hora2=12) && (min2>=0 && min2<55)) {
     hora3 = 4;
-  } else if ((hora2=13 && min2>=10) && (hora2=14 && min2<5)) {
+  } else if ((hora2=13 && min2>=10) || (hora2=14 && min2<5)) {
     hora3 = 5;
-  } else if ((hora2=14 && min2>=5) && (hora2=15 && min2<0)) {
+  } else if (hora2=14 && min2>=5) {
     hora3 = 6;
   }
 
